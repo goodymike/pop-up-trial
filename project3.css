@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+    background:linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    position: relative;
+}
+.formBg {
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0,0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    /*transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    -webkit-animation: fadeIn 1s;
+    animation : fadeIn 1s;*/
+  }
+ /*.show{
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+  }
+  @-webkit-keyframes fadeIn{
+      from {opacity: 0;} to 
+      {opacity: 1;}
+  }
+  @keyframes fadeIn{
+    from {opacity: 0;} to 
+    {opacity: 1;}
+}*/
+  .count{
+      margin: 10px 0px;
+      line-height: 1.1rem;
+  }
+
+.shop{
+    padding:10px 20px;
+    width: 30%;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: orangered;
+    align-self: center;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid wheat;
+}
+.shop:hover{
+    background-color: wheat;
+    color: orangered;
+}
+.close-btn {
+    background-color: white;
+    font-size: 2rem;
+    z-index: 5;
+    border: none;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    cursor: pointer;
+
+}
+.form{
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    z-index: 10;
+    top: 15%;
+    left: 36%;
+    right: 36%;
+    bottom: 10%;
+    /*transform: translate(-50%, -50%) scale();
+    transition: 200ms ease-in-out;*/
+    
+}
+.input {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid gainsboro;
+    padding: 10px;
+    margin-top: 10px;
+}
+.center{
+    padding: 10px;
+    overflow: visible;
+}
+.shopp{
+    padding:7px 5px;
+    min-width: 40%;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: orangered;
+    align-self: center;
+    margin: auto 30%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 1px solid wheat;
+}
+.shopp:hover{
+    background-color: wheat;
+    color: orangered;
+}
+.data{
+    margin: 10px 0px;
+}
+@media (max-width:930px){
+    .form{
+        left: 13%;
+        right: 13%;
+        top: 10%;
+        bottom: 5%;
+    }
+}

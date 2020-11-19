@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="project3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> third project</title>
+  </head> 
+  <body>
+      <div class="container">
+          <div class="welcome">
+              <h1> WELCOME TO GOODYS SHOPPING COMPLEX</h1>
+              <button onclick="openForm()" class="shop" > SHOP NOW </button>
+        </div>
+        <div class="formBg how " id="form">
+            <div class="form">
+                <button class="close-btn" >&times;</button>
+                 <div class="center">
+                     <h4>PLEASE FILL OUT THE SECURITY QUESTIONS TO HELP US SERVE YOU BETTER</h4>
+                     <form onsubmit="return false">
+                        <div class="data">
+                            <label >Name</label>
+                            <input id="name" class="input" type="text" required placeholder="Full Name">  
+                        </div>
+                        <div class="data">
+                            <label>Age</label>
+                            <input id="age" class="input" type="text" required placeholder="Age">  
+                        </div>
+                        <div class="data">
+                            <label ><h5>Are you wearing a facemask ?</h5></label><br>
+                            <select name="facemask" id="mask">
+                                <option value="yes">YES</option>
+                                <option value="no">NO</option>
+                            </select>
+                        </div>
+                        <button type="submit" onsubmit="return false" onclick="checkUser()" class="shopp">SHOP</button>
+                     </form>
+                     <div class="count">
+                        <h5 id="allow">ALLOWED:0</h5>
+                        <h5 id="deny">DENIED:0</h5>
+                        <h5 id="sum">TOTAL:0</h5>
+                     </div>
+                 </div>
+             </div>
+        </div>
+      </div>
+<script src="project.js"></script> 
+  </body>
+</html>
