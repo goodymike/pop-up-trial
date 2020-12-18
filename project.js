@@ -6,7 +6,7 @@ let denied=0;
 let total=0;
 
 function checkUser() {
-   if (age.value==null && mask.value==null) {
+   if (age.value==='' || name.value==='') {
       denied++;
       total++;
       document.querySelector("#deny").innerHTML= "DENIED VISITORS:" + denied;
@@ -49,16 +49,15 @@ let formPopUp= document.querySelector(".formBg");
 let btn= document.querySelector(".shop");
 let close= document.querySelector(".close-btn");
 
-btn.onclick= function () {
-      formPopUp.style.display="block";
-      console.log(1);
-   
-   }
    function openForm() {
-      document.getElementById("form").style.display="block";
+      if (document.getElementById("form").style.display=="none") {
+         document.getElementById("form").style.display="block";
+      } else {
+         document.getElementById("form").style.display="none";
+      }
+      
    }
    
-}
 close.onclick= function() {
    formPopUp.style.display="none"
 }
@@ -67,7 +66,3 @@ window.onclick= function(event) {
       formPopUp.style.display="none" 
    } 
 }
-function toggleForm() {
-    btn.classList.toggle("show")
-}
-btn.style.color="white";
